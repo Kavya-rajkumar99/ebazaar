@@ -7,12 +7,39 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header{
-  background-color: #404040;
+.products{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.product{
+  border : 1px solid #404040;
+  margin : 1rem;
+}
+.product img{
+ width : 100%;
+ max-width : 250px;
+}
+.product-info{
   padding: 1rem;
 }
-header a{
+main{
+ flex : 1
+}
+.product a{
   text-decoration: none;
-  color: white;
-  font-weight: bold;
+}
+
+.section-container{
+ min-height: 100vh;
+}
+.rating span{
+  color : #fddb33
+}
+
+.card a{
+  text-decoration: none !important;
+}
+.brandText{
+  font-size: 28px !important;
 }
