@@ -61,7 +61,7 @@ export const Rating = ({ rating, numOfReviews }) => {
         </span>
       </div>
       <div>
-        <p>{numOfReviews} Reviews</p>
+        <p className="mb-0">{numOfReviews} Reviews</p>
       </div>
     </div>
   );

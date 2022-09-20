@@ -43,3 +43,6 @@ main{
 .brandText{
   font-size: 28px !important;
 }
+.imageSize{
+  max-width:100%;
+}
