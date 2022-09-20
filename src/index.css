@@ -49,3 +49,6 @@ main{
 .img-thumbnail{
   height: 5rem !important;
 }
+.formContainer{
+  max-width: 600px !important;
+}
