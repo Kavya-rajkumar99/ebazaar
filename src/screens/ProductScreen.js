@@ -14,6 +14,7 @@ import { LoadingBox } from "../components/LoadingBox";
 import { MessageBox } from "../components/MessageBox";
 import { getError } from "../utils";
 import { Store } from "../Store";
+import { useNavigate } from "react-router-dom";
 
 
 const reducer = (state, action) => {
@@ -29,6 +30,7 @@ const reducer = (state, action) => {
   }
 };
 export const ProductScreen = () => {
+  const navigate = useNavigate()
   const { slug } = useParams();
   const [{ loading, error, product }, dispatch] = useReducer(reducer, {
     loading: true,
@@ -61,7 +63,7 @@ export const ProductScreen = () => {
       return;
     }
      cartCtxDispatch({type:"ADD_TO_CART",payload:{...product,quantity}})
-     console.log(cart)
+     navigate('/cart')
   }
   return loading ? (
     <LoadingBox />

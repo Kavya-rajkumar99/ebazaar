@@ -37,7 +37,7 @@ main{
   color : #fddb33
 }
 
-.card a{
+.card a,.removeDec{
   text-decoration: none !important;
 }
 .brandText{
@@ -45,4 +45,7 @@ main{
 }
 .imageSize{
   max-width:100%;
+}
+.img-thumbnail{
+  height: 5rem !important;
 }
