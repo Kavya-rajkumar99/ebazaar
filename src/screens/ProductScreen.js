@@ -38,7 +38,7 @@ export const ProductScreen = () => {
     product: {},
   });
   useEffect(() => {
-    const fetchProducts = async () => {
+    const fetchProduct = async () => {
       console.log("Hiii");
       dispatch({ type: "FETCH_REQUEST" });
       try {
@@ -49,7 +49,7 @@ export const ProductScreen = () => {
       }
       // setProducts(result.data);
     };
-    fetchProducts();
+    fetchProduct();
   }, [slug]);
 
   const {state,dispatch:cartCtxDispatch} = useContext(Store)
